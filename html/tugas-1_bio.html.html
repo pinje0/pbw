@@ -7,36 +7,87 @@
         <center>
             <table border="1px" cellspacing="0" cellpadding="8">
                 <tr bgcolor="#252525">
-                    <td colspan="3" align="center"><font color="#fff">BIODATA</font></td>
+                    <td colspan="3" align="center">
+                        <font color="#fff">BIODATA</font>
+                    </td>
                 </tr>
                 <tr>
                     <td rowspan="8" align="center">
-                        <image src="src/img/2pac.jpg" width="150" heigh="200"></image>
+                        <image src="src/img/2pac.jpg" width="150px"></image>
                     </td>
                     <td bgcolor="#999999">Name</td>
                     <td>Tupac Amaru Shakur</td>
                 </tr>
                 <tr>
                     <td bgcolor="#999999">Born</td>
-                    <td> Lesane Parish Crooks June 16, 1971 New York City, U.S</td>
+                    <td>
+                        Lesane Parish Crooks June 16, 1971 New York City, U.S
+                    </td>
                 </tr>
                 <tr>
                     <td bgcolor="#999999">Died</td>
-                    <td> September 13, 1996 (aged 25) Las Vegas, Nevada, U.S.</td>
+                    <td>
+                        September 13, 1996 (aged 25) Las Vegas, Nevada, U.S.
+                    </td>
                 </tr>
-                <tr> 
-                    <td bgcolor="#999999">Cause of death</td> 
+                <tr>
+                    <td bgcolor="#999999">Cause of death</td>
                     <td>Drive-by homicide (gunshot wounds)</td>
                 </tr>
-                <tr> 
-                    <td bgcolor="#999999">Occupations</td> 
-                    <td>Rapper • Songwriter • Actor</td>
+                <tr>
+                    <td bgcolor="#999999">Occupations</td>
+                    <td>Rapper • Songwriter • Actor</td>    
                 </tr>
-                <tr> 
-                    <td bgcolor="#999999">Years active</td> 
+                <tr>
+                    <td bgcolor="#999999">Years active</td>
                     <td>1989-1996</td>
                 </tr>
             </table>
+
+            <h2>Registration Form</h2>
+            <form>
+                <label for="name">Name : </label>
+                <input type="text" id="name" name="name" />
+                <br />
+                <label for="password">Password : </label>
+                <input type="password" id="password" name="password" />
+
+                <br />
+
+                <label for="gender">Gender : </label>
+                <input type="radio" id="male" name="male" value="male" /> Male
+                <input type="radio" id="female" name="female" value="female" />Female
+                <br />
+                <label for="checkbox-input">Speciality : </label>
+                <input type="checkbox" id="front" name="front" value="front" />
+                Front-end
+                <input type="checkbox" id="back" name="back" value="back" />
+                Back-end
+                <b>(Check both for Fullstack)</b>
+
+                <br />
+
+                <label for="education">Education : </label>
+                <select id="education" name="education">
+                    <option value="Option 1">SD</option>
+                    <option value="Option 2">SMP</option>
+                    <option value="Option 3">SMA</option>
+                </select>
+
+                <br />
+
+                <label for="about">About Me : </label>
+                <textarea id="about" name="about" rows="4" cols="50"></textarea>
+
+                <br />
+
+                <label for="file">CV : </label>
+                <input type="file" id="file" name="file" />
+
+                <br />
+
+                <input type="submit" id="submit" name="submit" value="Submit" />
+            </form>
         </center>
     </body>
 </html>
