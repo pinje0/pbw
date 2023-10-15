@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td bgcolor="#999999">Occupations</td>
-                    <td>Rapper • Songwriter • Actor</td>    
+                    <td>Rapper • Songwriter • Actor</td>
                 </tr>
                 <tr>
                     <td bgcolor="#999999">Years active</td>
@@ -46,18 +46,27 @@
 
             <h2>Registration Form</h2>
             <form>
+                <!-- text -->
                 <label for="name">Name : </label>
                 <input type="text" id="name" name="name" />
                 <br />
+                <!-- password  -->
                 <label for="password">Password : </label>
                 <input type="password" id="password" name="password" />
 
                 <br />
 
                 <label for="gender">Gender : </label>
+                <!-- radio  -->
                 <input type="radio" id="male" name="male" value="male" /> Male
-                <input type="radio" id="female" name="female" value="female" />Female
+                <input
+                    type="radio"
+                    id="female"
+                    name="female"
+                    value="female"
+                />Female
                 <br />
+                <!-- checkbox -->
                 <label for="checkbox-input">Speciality : </label>
                 <input type="checkbox" id="front" name="front" value="front" />
                 Front-end
@@ -81,12 +90,22 @@
 
                 <br />
 
+                <!-- file  -->
                 <label for="file">CV : </label>
                 <input type="file" id="file" name="file" />
 
                 <br />
-
+                <!-- submit -->
                 <input type="submit" id="submit" name="submit" value="Submit" />
+
+                <!-- reset -->
+                <input type="reset" value="Reset" />
+
+                <!-- hidden -->
+                <input type="hidden" id="custId" name="custId" value="9999" />
+                <br />
+                <!-- button -->
+                <p>Have an account?<input type="button" value="Click Here" /></p>
             </form>
         </center>
     </body>
